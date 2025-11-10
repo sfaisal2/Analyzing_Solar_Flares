@@ -1,0 +1,32 @@
+Activity 1 + 5 Summary
+
+Generated files:
+ - map_method1_counts.png
+ - map_method2_duration_energy.png
+
+Total intensity (Method 1: total_counts): 132,886,187,415
+Total intensity (Method 2: duration × energy_band): 558,491,752
+
+Top 5 spatial cells (Method 1):
+# A tibble: 5 × 3
+  cx          cy                  val
+  <fct>       <fct>             <dbl>
+1 (-50,0]     (-50,0]     10322868884
+2 (950,1e+03] (100,150]    2462992684
+3 (900,950]   (-300,-250]  2234850393
+4 (-850,-800] (150,200]    2111407079
+5 (350,400]   (-350,-300]  1893229009
+
+Top 5 spatial cells (Method 2):
+# A tibble: 5 × 3
+  cx          cy              val
+  <fct>       <fct>         <dbl>
+1 (900,950]   (200,250]   6956290
+2 (-950,-900] (200,250]   6821098
+3 (-950,-900] (-250,-200] 6719404
+4 (-950,-900] (-300,-250] 6275288
+5 (-950,-900] (150,200]   6221544
+
+Notes:
+- Method 2 parses 'lo-hi' ranges in energy_band; exact '3-6' rows are excluded.
+- Upper bound capped at 800 keV for stability (adjust if your rubric prefers).
