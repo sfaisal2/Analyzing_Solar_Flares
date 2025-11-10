@@ -1,0 +1,6 @@
+class_str,flags,count
+C,A0 DR ES P1 PE Q3,90
+M,a0 A1 DF DR ES P1 PE Q4,12
+NF,A0 P1 PE Q1,3861
+X,a0 A1 DR EE P1 PE Q4 SS,2
+X,a0 A1 DR ES P1 PE Q4 SE,2
