@@ -88,7 +88,7 @@ for class_name in sorted(all_classes):
         # Get top 3 flags
         top_flags = sorted(flag_counter.items(), key=lambda x: x[1], reverse=True)[:3]
         
-        print(f"\n{class_name} class ({len(class_data)} events):")
+        print(f"\n{class_name} class ({len(class_data)} events):")  # Fixed: changed {class} to {class_name}
         if top_flags:
             for flag, count in top_flags:
                 percentage = (count / len(class_data)) * 100
